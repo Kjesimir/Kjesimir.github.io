@@ -1,3 +1,3 @@
 # Kjesimir Debski
 
-[Урок 10]-(https://kjesimir.github.io/ProjectGloAcademy/SassProject)
+[Урок 10](https://kjesimir.github.io/ProjectGloAcademy/SassProject) - Знакомство c Sass

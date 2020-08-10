@@ -1,0 +1,56 @@
+a:focus,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+button:focus,
+input:focus,
+a:focus,
+textarea:focus {
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+section {
+  padding: 10rem 0;
+}
+
+.phone-link {
+  font-weight: 900;
+  color: #1a1820;
+  font-size: 2rem;
+}
+
+.button {
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  border-radius: 8px;
+  background-color: #fbb203;
+  color: #ffffff;
+  border: unset;
+}
+
+.header .row {
+  display: flex;
+  align-items: center;
+}
+
+main {
+  padding: 3rem 0;
+}
+
+/*# sourceMappingURL=style.css.map */

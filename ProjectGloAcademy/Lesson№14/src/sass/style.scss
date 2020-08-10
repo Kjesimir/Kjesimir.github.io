@@ -1,0 +1,27 @@
+@import 'common';
+
+.phone-link {
+    font-weight: 900;
+    color: $textDarkColor;
+    font-size: 2rem;
+}
+
+.button {
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    border-radius: 8px;
+    background-color: $accentColor;
+    color: $textLightColor;
+    border: unset;
+}
+
+.header {
+    .row {
+        display: flex;
+        align-items: center;
+    }
+}
+
+main {
+    padding: 3rem 0;
+}

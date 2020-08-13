@@ -1,18 +1,24 @@
 @import 'common';
 
+body {
+    @include reg();
+}
+
 .phone-link {
+    font-size: 2rem;
+    @include bold();
     font-weight: 900;
     color: $textDarkColor;
-    font-size: 2rem;
 }
 
 .button {
     padding: 1rem 3rem;
-    text-transform: uppercase;
     border-radius: 8px;
+    border: unset;
+    text-transform: uppercase;
     background-color: $accentColor;
     color: $textLightColor;
-    border: unset;
+    @include bold();
 }
 
 .header {
@@ -22,6 +28,94 @@
     }
 }
 
-main {
-    padding: 3rem 0;
+.main {
+    padding: 3rem 0 5rem;
+    background: #ffffff url(../img/main-back.png) center center no-repeat;
+    background-size: cover;
+
+    &-content {
+        margin-top: 10rem;
+
+        &__title {
+            margin-bottom: 4rem;
+            text-transform: uppercase;
+            font-size: 4rem;
+            line-height: 5.45rem;
+            @include bold();
+        }
+
+        &__subtitle {
+            margin-bottom: 4rem;
+            font-size: 2.4rem;
+        }
+
+        &__trigger {
+            padding: 3.3rem 4rem;
+            margin-bottom: 3rem;
+            display: inline-block;
+            font-size: 1.8rem;
+            text-align: center;
+            background-color: $mainColor;
+            color: $textLightColor;
+
+            strong {
+                font-size: 2.5rem;
+                @include bold();
+            }
+        }
+
+        &__payment {
+            font-size: 2.2rem;
+            display: block;
+            text-transform: uppercase;
+            @include bold();
+        }
+
+        &__form {
+            padding: 4rem 5rem;
+            position: relative;
+            text-align: center;
+            background-color: #ffffff;
+
+            &-title {
+                margin-bottom: 4rem;
+                font-size: 1.8rem;
+
+                strong {
+                    font-size: 1.9rem;
+                }
+            }
+
+            &-button {
+                display: block;
+                width: 100%;
+                padding: 2.3rem 5rem;
+                margin-bottom: 1.5rem;
+            }
+
+            input {
+                display: block;
+                padding: 1.6rem;
+                width: 100%;
+                margin: 2rem 0;
+                border-radius: 5px;
+                border: 1px solid #dddddd;
+            }
+
+            label {
+                position: absolute;
+                display: inline-block;
+                padding: 0.5rem;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                font-size: 1.3rem;
+                background-color: #ffffff;
+                color: #565656;
+            }
+
+            small {
+                @include bold();
+            }
+        }
+    }
 }

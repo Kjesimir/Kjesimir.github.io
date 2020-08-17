@@ -80,31 +80,15 @@ body {
   display: flex;
   align-items: center;
 }
-@media screen and (max-width: 769px) {
-  .header .row {
-    height: 220px;
-    justify-content: space-between;
-    flex-direction: column;
-  }
-}
 
 .main {
   padding: 3rem 0 5rem;
   background: #ffffff url(../img/main-back.png) center center no-repeat;
   background-size: cover;
 }
-@media screen and (max-width: 991px) {
-  .main {
-    background-position: top right;
-  }
-}
 .main-content {
   margin-top: 10rem;
-}
-@media screen and (max-width: 991px) {
-  .main-content {
-    text-align: center;
-  }
+  text-align: center;
 }
 .main-content__title {
   margin-top: -10px;
@@ -136,11 +120,6 @@ body {
   display: block;
   text-transform: uppercase;
   font-family: "ProximaNova_bold", sans-serif;
-}
-@media screen and (max-width: 991px) {
-  .main-content__payment {
-    margin-bottom: 3rem;
-  }
 }
 .main-content__form {
   padding: 4rem 5rem;
@@ -183,4 +162,4 @@ body {
   font-family: "ProximaNova_bold", sans-serif;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css%5D.map */

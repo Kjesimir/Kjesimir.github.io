@@ -64,6 +64,11 @@ body {
             font-size: 4rem;
             line-height: 5.45rem;
             @include bold();
+
+            @media screen and (max-width: 640px){
+                font-size: 2.4rem;
+                line-height: auto;
+            }
         }
 
         &__subtitle {
@@ -144,4 +149,69 @@ body {
             }
         }
     }
+}
+
+.section {
+    padding: 100px 0;
+
+    &-header {
+        @include bold();
+        font-size: 3.6rem;
+        text-align: center;
+        margin: 2rem 0 10rem;
+    }
+}
+
+.features {
+    &-slider {
+        
+    }
+
+    &-block {
+        text-align: center;
+
+        h3 {
+            font-size: 1.4rem;
+            @include bold();
+            margin-bottom: 3rem;
+        }
+
+        p {
+            width: 80%;
+            display: inline-block;
+        }
+    }
+
+    &-img {
+        height: 8rem;
+        margin-bottom: 3rem;
+        
+        img {
+            display: block;
+            margin:0 auto;
+            max-height: 100%;
+        }
+    }
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    width: 2rem;
+    height: 2rem;
+    transform: translateY(-50%);
+    border: none;
+    z-index: 99;
+}
+
+.prev {
+    left: 0;
+    background: url('../img/left-arrow.png') center no-repeat;
+    background-size: 70%;
+}
+
+.next {
+    right: 0;
+    background: url('../img/right-arrow.png') center no-repeat;
+    background-size: 90%;
 }

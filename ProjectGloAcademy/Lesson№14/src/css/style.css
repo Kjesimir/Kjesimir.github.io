@@ -114,6 +114,12 @@ body {
   line-height: 5.45rem;
   font-family: "ProximaNova_bold", sans-serif;
 }
+@media screen and (max-width: 640px) {
+  .main-content__title {
+    font-size: 2.4rem;
+    line-height: auto;
+  }
+}
 .main-content__subtitle {
   margin-bottom: 4rem;
   font-size: 2.4rem;
@@ -181,6 +187,60 @@ body {
 }
 .main-content__form small {
   font-family: "ProximaNova_bold", sans-serif;
+}
+
+.section {
+  padding: 100px 0;
+}
+.section-header {
+  font-family: "ProximaNova_bold", sans-serif;
+  font-size: 3.6rem;
+  text-align: center;
+  margin: 2rem 0 10rem;
+}
+
+.features-block {
+  text-align: center;
+}
+.features-block h3 {
+  font-size: 1.4rem;
+  font-family: "ProximaNova_bold", sans-serif;
+  margin-bottom: 3rem;
+}
+.features-block p {
+  width: 80%;
+  display: inline-block;
+}
+.features-img {
+  height: 8rem;
+  margin-bottom: 3rem;
+}
+.features-img img {
+  display: block;
+  margin: 0 auto;
+  max-height: 100%;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  z-index: 99;
+  width: 2rem;
+  height: 2rem;
+}
+
+.prev {
+  left: 0;
+  background: url("../img/left-arrow.png") center no-repeat;
+  background-size: 70%;
+}
+
+.next {
+  right: 0;
+  background: url("../img/right-arrow.png") center no-repeat;
+  background-size: 90%;
 }
 
 /*# sourceMappingURL=style.css.map */

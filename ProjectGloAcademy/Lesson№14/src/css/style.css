@@ -45,7 +45,7 @@ section {
   padding: 10rem 0;
 }
 
-input, button, a {
+input, button, a, textarea {
   outline: none;
 }
 
@@ -150,8 +150,6 @@ body {
 }
 .main-content__form {
   padding: 4rem 5rem;
-  position: relative;
-  text-align: center;
   background-color: #ffffff;
 }
 .main-content__form-title {
@@ -161,13 +159,18 @@ body {
 .main-content__form-title strong {
   font-size: 1.9rem;
 }
-.main-content__form-button {
+
+.form {
+  position: relative;
+  text-align: center;
+}
+.form-button {
   display: block;
   width: 100%;
   padding: 2.3rem 5rem;
   margin-bottom: 1.5rem;
 }
-.main-content__form input {
+.form input, .form textarea {
   display: block;
   padding: 1.6rem;
   width: 100%;
@@ -175,7 +178,7 @@ body {
   border-radius: 5px;
   border: 1px solid #dddddd;
 }
-.main-content__form label {
+.form label {
   position: absolute;
   display: inline-block;
   padding: 0.5rem;
@@ -185,7 +188,7 @@ body {
   background-color: #ffffff;
   color: #565656;
 }
-.main-content__form small {
+.form small {
   font-family: "ProximaNova_bold", sans-serif;
 }
 
@@ -224,11 +227,11 @@ body {
 .arrow {
   position: absolute;
   top: 50%;
+  width: 2rem;
+  height: 2rem;
   transform: translateY(-50%);
   border: none;
   z-index: 99;
-  width: 2rem;
-  height: 2rem;
 }
 
 .prev {
@@ -241,6 +244,49 @@ body {
   right: 0;
   background: url("../img/right-arrow.png") center no-repeat;
   background-size: 90%;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9;
+}
+.popup-content {
+  position: fixed;
+  background-color: #ffffff;
+  padding: 4rem 5rem;
+  left: 50%;
+  top: 10%;
+  transform: translate(-50%);
+  text-align: center;
+}
+.popup__title {
+  font-size: 18px;
+  font-family: "ProximaNova_bold", sans-serif;
+}
+.popup__subtitle {
+  font-size: 18px;
+}
+.popup__close {
+  position: absolute;
+  right: -4rem;
+  top: -2.5rem;
+  width: 3rem;
+  border: none;
+  text-align: center;
+  font-size: 5rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+.popup__form {
+  margin-top: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

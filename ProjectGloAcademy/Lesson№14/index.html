@@ -26,7 +26,7 @@
                         <a href="tel:+7 495 771 05 08" class="phone-link">+7 495 771 05 08</a>
                     </div>
                     <div class="col-md-4 col-lg-3">
-                        <button class="button">получить консультацию</button>
+                        <button class="button popup-button">получить консультацию</button>
                     </div>
                 </div>
             </div>
@@ -45,10 +45,10 @@
                                     замерщика</strong> </div>
                             <form action="#" class="form">
                                 <label for="">Ваше имя</label>
-                                <input class="main-content__form-name" type="text">
+                                <input class="form-name" type="text">
                                 <label for="">Номер телефона</label>
-                                <input class="main-content__form-phone" type="text">
-                                <button class="button main-content__form-button">Оставьте заявку</button>
+                                <input class="form-phone" type="text">
+                                <button class="button form-button">Оставьте заявку</button>
                                 <small>Приедем в день обращения*</small>
                             </form>
                         </div>
@@ -109,10 +109,57 @@
             </div>
         </div>
     </div>
+
+    <!-- Модальное окно -->
+	<div class="popup">
+		<div class="popup-dialog">
+			<div class="popup-content">
+				<div class="popup__close">&times;</div>
+				<div class="popup__title">Заинтересовало?</div>
+				<div class="popup__subtitle"> Оставьте контактные данные <br>для связи </div>
+				<form action="" class="form popup__form">
+                    <label for="">Ваше имя</label>
+                    <input class="form-name" type="text">
+                    <label for="">Номер телефона</label>
+                    <input class="form-phone" type="text">
+                    <label for="">Сообщение</label>
+                    <textarea class="form-message" rows="3"></textarea>
+                    <button class="button form-button">Оставьте заявку</button>
+                </form>
+			</div>
+		</div>
+	</div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="src/slick/slick.min.js"></script>
     <script>
+        // Открытие и закрытие модального окна
+
+        $('.popup-button').on('click',function (event) {
+            event.preventDefault();
+            $('.popup').fadeIn();
+        })
+
+        $('.popup__close').on('click',function (event) {
+            event.preventDefault();
+            $('.popup').fadeOut();
+        })
+
+        $(document).keydown(function(e) {
+            if (e.keyCode === 27) {
+                e.stopPropagation();
+                $('.popup').fadeOut();
+            }
+        });
+
+        $('.popup').click(function(e) {
+            console.log($(e.target));
+            console.log($(e.target).closest('.popup-content'));
+            if ($(e.target).closest('.popup-content').length == 0) {
+                $(this).fadeOut();					
+            }
+        });
+        //Slider настройка 
         $('.features-slider').slick({
             infinite: true,
             slidesToShow: 4,

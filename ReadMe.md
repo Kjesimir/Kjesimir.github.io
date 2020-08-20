@@ -9,3 +9,5 @@
 [Урок 15-1](https://kjesimir.github.io/ProjectGloAcademy/Lesson№15-1) - Псевдоклассы и элементы
 
 [Урок 16](https://kjesimir.github.io/ProjectGloAcademy/Lesson№16) - Работа со Slider 
+
+[Урок 17](https://kjesimir.github.io/ProjectGloAcademy/Lesson№17) - Работа со Модальными окнами 

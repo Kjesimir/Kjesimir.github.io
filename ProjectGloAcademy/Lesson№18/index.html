@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Задание к 17 уроку</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+		integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
+		integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+		
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<section class="section-accordion">
+		<div class="container">
+			<div id="accordion">
+				<h3 class="accordion__item">Section 1</h3>
+				<div class="accordion__block">
+				  <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget.
+				  Integer ut neque. Vivamus nisi metus, molestie vel, gravida in,
+				  condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros.
+				  Nam mi. Proin viverra leo ut odio.</p>
+				</div>
+				<h3 class="accordion__item">Section 2</h3>
+				<div class="accordion__block">
+				  <p>Sed non urna. Phasellus eu ligula. Vestibulum sit amet purus.
+				  Vivamus hendrerit, dolor aliquet laoreet, mauris turpis velit,
+				  faucibus interdum tellus libero ac justo.</p>
+				</div>
+				<h3 class="accordion__item">Section 3</h3>
+				<div class="accordion__block">
+				  <p>Nam enim risus, molestie et, porta ac, aliquam ac, risus.
+				  Quisque lobortis.Phasellus pellentesque purus in massa.</p>
+				  <ul>
+					<li>List item one</li>
+					<li>List item two</li>
+					<li>List item three</li>
+				  </ul>
+				</div>
+			</div>
+	
+		</div>
+
+	</section>
+
+	<section class="section-form">
+
+		<div class="container">
+			<ul class="nav nav-tabs" id="myTab" role="tablist">
+				<li class="nav-item active">
+				  <a class="nav-link" id="login-tab" data-toggle="tab" href="#login">Вход</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" id="register-tab" data-toggle="tab" href="#register" >Регистрация</a>
+				</li>
+			  </ul>
+			  <div class="tab-content" id="myTabContent">
+				<div class="tab-pane active" id="login" role="tabpanel">
+					<form action="" class="login-form">
+						<input type="text"class="login-form__input " placeholder="Ваше имя">
+						<input type="text"class="login-form__input " placeholder="Пароль">
+						<span class="login-form__error">Забыли пароль?</span>
+						<input id="checkbox" type="checkbox" value="">						
+						<label for="checkbox" class="login-form__checkbox">Напомнить мне</label>
+						<button class="login-form__button">Войти</button>
+					</form>
+				</div>
+				<div class="tab-pane" id="register" role="tabpanel" >
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, facilis dignissimos repellendus fugiat nulla corrupti, magnam numquam architecto nobis dolore voluptates inventore deleniti illo repudiandae, veritatis in doloribus autem. Similique.
+				</div>
+			  </div>
+		</div>
+
+	</section>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+		integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous">
+	</script>
+	  <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script>
+		$( "#accordion" ).accordion();
+
+
+		</script>
+</body>
+
+</html>

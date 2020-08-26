@@ -11,3 +11,5 @@
 [Урок 16](https://kjesimir.github.io/ProjectGloAcademy/Lesson№16) - Работа со Slider 
 
 [Урок 17](https://kjesimir.github.io/ProjectGloAcademy/Lesson№17) - Работа со Модальными окнами 
+
+[Урок 18](https://kjesimir.github.io/ProjectGloAcademy/Lesson№18) - Стилизация табов и аккордионов

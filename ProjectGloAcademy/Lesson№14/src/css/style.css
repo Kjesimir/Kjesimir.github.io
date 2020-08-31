@@ -383,6 +383,11 @@ body {
   background-image: url(../img/background-feedback.png);
   font-size: 1.6rem;
 }
+@media screen and (max-width: 1199px) {
+  .feedback .fotorama {
+    margin-bottom: 3rem;
+  }
+}
 .feedback__title {
   margin-bottom: 9.5rem;
   text-align: center;
@@ -395,9 +400,14 @@ body {
   background-color: #ffffff;
   box-shadow: 6px 10px 18px 0 rgba(0, 0, 0, 0.11);
 }
+@media screen and (max-width: 425px) {
+  .feedback-slider {
+    padding: 4rem;
+  }
+}
 .feedback-slider__button {
   position: absolute;
-  width: 5rem;
+  width: 4rem;
   height: 6rem;
   background-repeat: no-repeat;
   background-size: cover;
@@ -406,17 +416,30 @@ body {
   top: 50%;
   transform: translateY(-50%);
 }
+@media screen and (max-width: 425px) {
+  .feedback-slider__button {
+    height: 5rem;
+  }
+}
 .feedback-slider__prev {
-  left: 0;
-  left: -5rem;
+  left: -4rem;
   background-position: left;
   background-image: url(../img/feedback-arrow-prev.png);
 }
+@media screen and (max-width: 768px) {
+  .feedback-slider__prev {
+    left: 0;
+  }
+}
 .feedback-slider__next {
-  right: 0;
-  right: -5rem;
+  right: -4rem;
   background-position: right;
   background-image: url(../img/feedback-arrow-next.png);
+}
+@media screen and (max-width: 768px) {
+  .feedback-slider__next {
+    right: 0;
+  }
 }
 .feedback-info__text {
   margin-bottom: 4rem;
@@ -457,6 +480,37 @@ body {
   background-color: #ffffff;
   border-bottom: none;
   border-radius: 0 2rem 0 0;
+}
+.feedback-form {
+  padding: 5rem 11rem;
+  margin-top: 6rem;
+  background-color: #ffffff;
+}
+@media screen and (max-width: 1199px) {
+  .feedback-form {
+    padding: 3rem 5rem;
+  }
+  .feedback-form label {
+    transform: translate(-50%, -50%);
+  }
+}
+.feedback-form__title {
+  margin-bottom: 2rem;
+  font-size: 2.1rem;
+  text-align: center;
+  font-family: "ProximaNova_bold", sans-serif;
+}
+.feedback-form__btn {
+  max-width: 25rem;
+  margin: 0 auto;
+}
+.feedback-form label {
+  transform: translate(-50%, 6px);
+}
+@media screen and (max-width: 991px) {
+  .feedback-form label {
+    transform: translate(-50%, -50%);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

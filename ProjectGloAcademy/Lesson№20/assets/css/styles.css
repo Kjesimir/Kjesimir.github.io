@@ -882,8 +882,3 @@ a.btn-cta {
     top: inherit;
   }
 }
-
-.feature-content {
-  position: relative;
-  bottom: -1125px;
-}

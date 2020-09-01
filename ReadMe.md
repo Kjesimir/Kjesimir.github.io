@@ -15,3 +15,5 @@
 [Урок 18](https://kjesimir.github.io/ProjectGloAcademy/Lesson№18) - Стилизация табов и аккордионов
 
 [Урок 19](https://kjesimir.github.io/ProjectGloAcademy/Lesson№19) - Видеофон
+
+[Урок 20](https://kjesimir.github.io/ProjectGloAcademy/Lesson№20) - Паралакс

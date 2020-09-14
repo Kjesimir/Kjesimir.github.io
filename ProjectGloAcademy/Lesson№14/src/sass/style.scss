@@ -161,6 +161,24 @@ body {
         font-size: 3.6rem;
         text-align: center;
         margin: 2rem 0 10rem;
+
+        &__all-inclusive {
+            
+            h2 {
+                font-size: 4.8rem;
+                margin-bottom: 2rem;
+            }
+
+            p {
+              font-size: 1.6rem;  
+              color: $textDarkColor;
+              @include reg();
+            }
+        }
+
+        &--active {
+            color: $mainColor;
+        }
     }
 }
 
@@ -510,6 +528,97 @@ body {
             @media screen and (max-width: 991px) {
                 transform: translate(-50%, -50%,);
             }
+        }
+    }
+}
+
+// Секция схема 
+.schema {
+    background: url(../img/schema/schema-bg.png) bottom -10rem right -15rem no-repeat;
+    background-size: 65rem;
+
+    @media (max-width:768px) {
+        background: none;
+        text-align: center;
+    }
+
+    &__header {
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+    
+    &__title {
+        @include bold();
+        font-size: 3.6rem;
+        margin-bottom: 2.5rem;
+    }
+
+    &-wrap {
+        min-height: 30rem;
+        font-size: 1.6rem;
+        @include reg();
+
+        @media (max-width:768px) {
+            min-height: 20rem;
+        }   
+    }
+
+    h3 {
+        @include bold();
+        font-size: 2rem;
+        margin-bottom: 2.5rem;
+    }
+
+    img {
+        margin-bottom: 2.5rem;
+    }
+}
+
+//Секция все включено 
+.all-inclusive {
+    background-color: $secondaryColor;
+    &__item{
+        display: flex;
+        min-height: 9rem;
+
+        @media (max-width: 1199px) {
+            min-height: 10rem;
+        }
+
+        &-text {
+            h4 {
+                @include bold();
+                font-size: 1.6rem;
+            }
+
+            p {
+                font-size: 1.1rem;
+            }
+        }
+    }
+
+    &__icon {
+        margin-right: 1.5rem;
+        transform: translateY(-1.5rem);
+       
+        &-border {
+            border-radius: 50%;
+            border: 3px solid $mainColor;
+            display: inline-block;
+            padding: 0.3rem;
+        }
+       
+        &-circle {
+            width: 4rem;
+            height: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 2rem;
+            @include bold();
+            background-color: $mainColor;
+            color: #ffffff;
         }
     }
 }

@@ -200,6 +200,18 @@ body {
   text-align: center;
   margin: 2rem 0 10rem;
 }
+.section-header__all-inclusive h2 {
+  font-size: 4.8rem;
+  margin-bottom: 2rem;
+}
+.section-header__all-inclusive p {
+  font-size: 1.6rem;
+  color: #1a1820;
+  font-family: "ProximaNova_reg", sans-serif;
+}
+.section-header--active {
+  color: #70c849;
+}
 
 .features-block {
   text-align: center;
@@ -511,6 +523,86 @@ body {
   .feedback-form label {
     transform: translate(-50%, -50%);
   }
+}
+
+.schema {
+  background: url(../img/schema/schema-bg.png) bottom -10rem right -15rem no-repeat;
+  background-size: 65rem;
+}
+@media (max-width: 768px) {
+  .schema {
+    background: none;
+    text-align: center;
+  }
+}
+.schema__header {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.schema__title {
+  font-family: "ProximaNova_bold", sans-serif;
+  font-size: 3.6rem;
+  margin-bottom: 2.5rem;
+}
+.schema-wrap {
+  min-height: 30rem;
+  font-size: 1.6rem;
+  font-family: "ProximaNova_reg", sans-serif;
+}
+@media (max-width: 768px) {
+  .schema-wrap {
+    min-height: 20rem;
+  }
+}
+.schema h3 {
+  font-family: "ProximaNova_bold", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+}
+.schema img {
+  margin-bottom: 2.5rem;
+}
+
+.all-inclusive {
+  background-color: #f5f5f5;
+}
+.all-inclusive__item {
+  display: flex;
+  min-height: 9rem;
+}
+@media (max-width: 1199px) {
+  .all-inclusive__item {
+    min-height: 10rem;
+  }
+}
+.all-inclusive__item-text h4 {
+  font-family: "ProximaNova_bold", sans-serif;
+  font-size: 1.6rem;
+}
+.all-inclusive__item-text p {
+  font-size: 1.1rem;
+}
+.all-inclusive__icon {
+  margin-right: 1.5rem;
+  transform: translateY(-1.5rem);
+}
+.all-inclusive__icon-border {
+  border-radius: 50%;
+  border: 3px solid #70c849;
+  display: inline-block;
+  padding: 0.3rem;
+}
+.all-inclusive__icon-circle {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 2rem;
+  font-family: "ProximaNova_bold", sans-serif;
+  background-color: #70c849;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=style.css.map */

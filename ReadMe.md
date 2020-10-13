@@ -18,4 +18,4 @@
 
 [Урок 20](https://kjesimir.github.io/ProjectGloAcademy/Lesson№20) - Паралакс
 
-[Урок 20](https://kjesimir.github.io/ProjectGloAcademy/Lesson№20) - Карты 
+[Урок 21](https://kjesimir.github.io/ProjectGloAcademy/Lesson№21) - Карты 

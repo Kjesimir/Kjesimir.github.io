@@ -46,15 +46,15 @@ body {
     background: #ffffff url(../img/main-back.png) center center no-repeat;
     background-size: cover;
 
-    @media screen and (max-width: 991px){
+    @media screen and (max-width: 991px) {
         background-position: top right;
     }
 
     &-content {
         margin-top: 10rem;
 
-        @media screen and (max-width: 991px){
-            text-align: center; 
+        @media screen and (max-width: 991px) {
+            text-align: center;
         }
 
         &__title {
@@ -65,7 +65,7 @@ body {
             line-height: 5.45rem;
             @include bold();
 
-            @media screen and (max-width: 640px){
+            @media screen and (max-width: 640px) {
                 font-size: 2.4rem;
                 line-height: auto;
             }
@@ -97,14 +97,15 @@ body {
             text-transform: uppercase;
             @include bold();
 
-            @media screen and (max-width: 991px){
-                margin-bottom: 3rem; 
+            @media screen and (max-width: 991px) {
+                margin-bottom: 3rem;
             }
         }
 
         &__form {
             padding: 4rem 5rem;
             background-color: #ffffff;
+
             &-title {
                 margin-bottom: 4rem;
                 font-size: 1.8rem;
@@ -128,7 +129,8 @@ body {
         margin-bottom: 1.5rem;
     }
 
-    input,textarea {
+    input,
+    textarea {
         display: block;
         padding: 1.6rem;
         width: 100%;
@@ -163,16 +165,16 @@ body {
         margin: 2rem 0 10rem;
 
         &__all-inclusive {
-            
+
             h2 {
                 font-size: 4.8rem;
                 margin-bottom: 2rem;
             }
 
             p {
-              font-size: 1.6rem;  
-              color: $textDarkColor;
-              @include reg();
+                font-size: 1.6rem;
+                color: $textDarkColor;
+                @include reg();
             }
         }
 
@@ -183,9 +185,7 @@ body {
 }
 
 .features {
-    &-slider {
-        
-    }
+    &-slider {}
 
     &-block {
         text-align: center;
@@ -205,10 +205,10 @@ body {
     &-img {
         height: 8rem;
         margin-bottom: 3rem;
-        
+
         img {
             display: block;
-            margin:0 auto;
+            margin: 0 auto;
             max-height: 100%;
         }
     }
@@ -245,7 +245,7 @@ body {
     bottom: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 9;
 
     &-content {
@@ -294,7 +294,7 @@ body {
     &-button {
         text-align: right;
 
-        @media screen and (max-width: 990px){
+        @media screen and (max-width: 990px) {
             margin-top: 3rem;
             text-align: center;
         }
@@ -309,12 +309,12 @@ body {
             margin-bottom: 4rem;
             @include bold();
 
-            @media screen and (max-width: 990px){
+            @media screen and (max-width: 990px) {
                 margin-bottom: 1.5rem;
             }
         }
 
-        @media screen and (max-width: 990px){
+        @media screen and (max-width: 990px) {
             margin-bottom: 5rem;
         }
     }
@@ -329,7 +329,7 @@ body {
             @include bold();
             min-width: 30rem;
 
-            @media screen and (max-width: 1200px){
+            @media screen and (max-width: 1200px) {
                 min-width: unset;
                 min-height: 4rem;
             }
@@ -341,7 +341,7 @@ body {
             max-width: 30rem;
         }
 
-        @media screen and (max-width: 1200px){
+        @media screen and (max-width: 1200px) {
             margin-bottom: 2rem;
         }
     }
@@ -375,7 +375,7 @@ body {
     .button {
         @include reg();
 
-        @media screen and (max-width: 1200px){
+        @media screen and (max-width: 1200px) {
             font-size: 1.4rem;
         }
 
@@ -387,13 +387,13 @@ body {
     background-image: url(../img/background-feedback.png);
     font-size: 1.6rem;
 
-    
-    @media screen and (max-width: 1199px){
+
+    @media screen and (max-width: 1199px) {
         .fotorama {
             margin-bottom: 3rem;
         }
     }
-    
+
     &__title {
         margin-bottom: 9.5rem;
         text-align: center;
@@ -405,9 +405,9 @@ body {
         padding: 6rem;
         position: relative;
         background-color: #ffffff;
-        box-shadow: 6px 10px 18px 0 rgba(0,0,0,0.11);
+        box-shadow: 6px 10px 18px 0 rgba(0, 0, 0, 0.11);
 
-        @media screen and (max-width: 425px){
+        @media screen and (max-width: 425px) {
             padding: 4rem;
         }
 
@@ -422,7 +422,7 @@ body {
             top: 50%;
             transform: translateY(-50%);
 
-            @media screen and (max-width: 425px){
+            @media screen and (max-width: 425px) {
                 height: 5rem;
             }
         }
@@ -432,7 +432,7 @@ body {
             background-position: left;
             background-image: url(../img/feedback-arrow-prev.png);
 
-            @media screen and (max-width: 768px){ 
+            @media screen and (max-width: 768px) {
                 left: 0;
             }
         }
@@ -442,7 +442,7 @@ body {
             background-position: right;
             background-image: url(../img/feedback-arrow-next.png);
 
-            @media screen and (max-width: 768px){ 
+            @media screen and (max-width: 768px) {
                 right: 0;
             }
         }
@@ -452,7 +452,7 @@ body {
         &__text {
             margin-bottom: 4rem;
         }
-    
+
         &__author {
             &-photo {
                 max-width: 50px;
@@ -465,14 +465,17 @@ body {
                     border-radius: 50%;
                 }
             }
+
             &-meta {
                 display: flex;
                 align-items: center;
-            } 
+            }
+
             &-name {
                 vertical-align: middle;
                 display: inline-block;
             }
+
             &-text {
                 margin-top: 2rem;
                 padding: 2rem;
@@ -491,7 +494,7 @@ body {
                     background-color: #ffffff;
                     border-bottom: none;
                     border-radius: 0 2rem 0 0;
-                } 
+                }
             }
         }
     }
@@ -501,12 +504,12 @@ body {
         margin-top: 6rem;
         background-color: #ffffff;
 
-        @media screen and (max-width: 1199px){
+        @media screen and (max-width: 1199px) {
             padding: 3rem 5rem;
 
-            
+
             label {
-                transform: translate(-50%, -50%,);
+                transform: translate(-50%, -50%, );
             }
         }
 
@@ -526,7 +529,7 @@ body {
             transform: translate(-50%, 6px);
 
             @media screen and (max-width: 991px) {
-                transform: translate(-50%, -50%,);
+                transform: translate(-50%, -50%, );
             }
         }
     }
@@ -546,7 +549,7 @@ body {
         text-align: center;
         margin-bottom: 5rem;
     }
-    
+
     &__title {
         @include bold();
         font-size: 3.6rem;
@@ -560,7 +563,7 @@ body {
 
         @media (max-width:768px) {
             min-height: 20rem;
-        }   
+        }
     }
 
     h3 {
@@ -577,7 +580,8 @@ body {
 //Секция все включено 
 .all-inclusive {
     background-color: $secondaryColor;
-    &__item{
+
+    &__item {
         display: flex;
         min-height: 9rem;
 
@@ -600,14 +604,14 @@ body {
     &__icon {
         margin-right: 1.5rem;
         transform: translateY(-1.5rem);
-       
+
         &-border {
             border-radius: 50%;
             border: 3px solid $mainColor;
             display: inline-block;
             padding: 0.3rem;
         }
-       
+
         &-circle {
             width: 4rem;
             height: 4rem;
@@ -619,6 +623,61 @@ body {
             @include bold();
             background-color: $mainColor;
             color: #ffffff;
+        }
+    }
+}
+
+//Секция Проблемы
+.problems {
+    h2 {
+        font-size: 3.6rem;
+        line-height: 1.8prem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 8rem;
+    }
+    &-list {
+        padding: 4rem;
+        font-size: 1.6rem;
+        h3 {
+            font-size: 2.1rem;
+            line-height: 1.8rem;
+            margin-bottom: 4.5rem;
+            font-weight: bold;
+        }
+
+        &--bad {
+            h3 {
+                color: #989898;
+            }
+
+            border: 4px solid #989898;
+        }
+        &--good {
+            border: 4px solid $mainColor;
+            li:before {
+                 background-image: url("data:image/svg+xml,%3Csvg height='21px' viewBox='0 -36 509.248 509' width='21px' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m171.902344 438.074219-171.902344-171.902344 100.625-100.609375 71.277344 71.296875 236.722656-236.734375 100.621094 100.621094zm0 0' fill='%23addb31'/%3E%3C/svg%3E");
+            }
+        }
+    }
+
+    ul {
+        list-style: none;
+        padding-left: 0;
+        min-height: 30rem;
+        li {
+            margin-bottom: 3rem;
+            position: relative;
+            padding-left: 4rem;
+
+            &:before {
+                content: '';
+                width: 2.1rem;
+                height: 2.1rem;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
         }
     }
 }

@@ -169,7 +169,8 @@ body {
   padding: 2.3rem 5rem;
   margin-bottom: 1.5rem;
 }
-.form input, .form textarea {
+.form input,
+.form textarea {
   display: block;
   padding: 1.6rem;
   width: 100%;
@@ -603,6 +604,94 @@ body {
   font-family: "ProximaNova_bold", sans-serif;
   background-color: #70c849;
   color: #ffffff;
+}
+
+.problems-container {
+  position: relative;
+}
+.problems h2 {
+  font-size: 3.6rem;
+  line-height: 1.8prem;
+  font-family: "ProximaNova_bold", sans-serif;
+  text-align: center;
+  margin-bottom: 8rem;
+}
+@media screen and (max-width: 425px) {
+  .problems h2 {
+    padding: 4rem;
+  }
+}
+.problems-list {
+  padding: 3rem;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+@media screen and (max-width: 425px) {
+  .problems-list {
+    padding: 2rem;
+  }
+}
+.problems-list h3 {
+  font-size: 2.1rem;
+  line-height: 1.8rem;
+  margin-bottom: 4.5rem;
+  font-family: "ProximaNova_bold", sans-serif;
+}
+.problems-list--bad {
+  border: 4px solid #e8e8e8;
+}
+.problems-list--bad h3 {
+  opacity: 0.5;
+}
+.problems-list--bad li:before {
+  background-image: url(../img/cancel-icon.png);
+  background-size: contain;
+}
+.problems-list--good {
+  border: 4px solid #358015;
+}
+.problems-list--good li:before {
+  background-image: url("data:image/svg+xml,%3Csvg height='21px' viewBox='0 -36 509.248 509' width='21px' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m171.902344 438.074219-171.902344-171.902344 100.625-100.609375 71.277344 71.296875 236.722656-236.734375 100.621094 100.621094zm0 0' fill='%23addb31'/%3E%3C/svg%3E");
+}
+.problems ul {
+  list-style: none;
+  padding-left: 0;
+  min-height: 30rem;
+}
+@media screen and (max-width: 1200px) {
+  .problems ul {
+    min-height: 36rem;
+  }
+}
+@media screen and (max-width: 991px) {
+  .problems ul {
+    min-height: auto;
+  }
+}
+.problems ul li {
+  margin-bottom: 3rem;
+  position: relative;
+  padding-left: 4rem;
+}
+.problems ul li:before {
+  content: "";
+  width: 2.1rem;
+  height: 2.1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.problems-img {
+  position: absolute;
+  bottom: 0;
+  width: 30rem;
+  margin-left: -19rem;
+  left: 50%;
+}
+@media screen and (max-width: 991px) {
+  .problems-img {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

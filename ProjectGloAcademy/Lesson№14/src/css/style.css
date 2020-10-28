@@ -154,6 +154,7 @@ body {
 .main-content__form-title {
   margin-bottom: 4rem;
   font-size: 1.8rem;
+  text-align: center;
 }
 .main-content__form-title strong {
   font-size: 1.9rem;
@@ -763,6 +764,49 @@ body {
 }
 .offers-img {
   text-align: center;
+}
+
+.tour {
+  background: url(../img/bg-tour.png) center center no-repeat;
+  background-size: cover;
+}
+@media screen and (max-width: 991px) {
+  .tour {
+    background: unset;
+    background-color: #f0ebea;
+  }
+}
+.tour--button {
+  padding: 2.3rem 3rem;
+}
+
+.upsell {
+  background-color: #286b0a;
+  color: #ffffff;
+  text-align: center;
+}
+.upsell__title {
+  font-size: 3.6rem;
+  font-family: "ProximaNova_bold", sans-serif;
+}
+.upsell__subtitle {
+  font-size: 1.9rem;
+  margin-top: 3rem;
+}
+.upsell-block {
+  min-height: 32rem;
+}
+.upsell-block img {
+  width: 100%;
+  max-width: 33rem;
+  margin-bottom: 2.5rem;
+}
+.upsell-block p {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+.upsell-blocks {
+  margin-top: 5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

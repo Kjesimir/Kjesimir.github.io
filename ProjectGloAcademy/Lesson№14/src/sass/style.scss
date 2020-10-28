@@ -109,6 +109,7 @@ body {
             &-title {
                 margin-bottom: 4rem;
                 font-size: 1.8rem;
+                text-align: center;
 
                 strong {
                     font-size: 1.9rem;
@@ -793,5 +794,54 @@ body {
 
     &-img {
         text-align: center;
+    }
+}
+
+// Секция tour 
+.tour {
+    background: url(../img/bg-tour.png) center center no-repeat;
+    background-size: cover;
+
+    @media screen and (max-width:991px){
+        background: unset;
+        background-color: #f0ebea;
+    }
+
+    &--button {
+        padding: 2.3rem 3rem;
+    }
+}
+
+//Секция 
+.upsell {
+    background-color: #286b0a;
+    color: $textLightColor;
+    text-align: center;
+
+    &__title {
+        font-size: 3.6rem;
+        @include bold();
+    }
+
+    &__subtitle {
+        font-size: 1.9rem;
+        margin-top: 3rem;
+    }
+
+    &-block {
+        min-height: 32rem;
+
+        img {
+            width: 100%;
+            max-width: 33rem;
+            margin-bottom: 2.5rem;
+        }
+        p {
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+        &s{
+            margin-top: 5rem;
+        }
     }
 }

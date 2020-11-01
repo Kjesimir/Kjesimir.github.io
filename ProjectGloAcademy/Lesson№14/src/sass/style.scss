@@ -703,8 +703,6 @@ body {
             }
         }
     }
-<<<<<<< HEAD
-=======
     &-img {
         position: absolute;
         bottom: 0;
@@ -810,7 +808,7 @@ body {
     }
 
     &--button {
-        padding: 2.3rem 3rem;
+        padding: 2.3rem 2rem;
     }
 }
 
@@ -846,5 +844,48 @@ body {
             margin-top: 5rem;
         }
     }
->>>>>>> e54eea7952e1af1337e1e156a50ce3ce88a456bb
+}
+
+//Секция контакты
+.contacts {
+    font-size: 1.6rem;
+    h2 {
+        @include bold();
+    }
+
+    p {
+        margin: 2rem 0;
+    }
+
+    &-link {
+        display: inline-block;
+        border-bottom: 1px solid #e8e8e8;
+    }
+}
+
+//Секция футер 
+.footer {
+    font-size: 1.6rem;
+    .logo {
+        @media screen and (max-width: 991px) {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+    }
+
+    &-info {
+        text-align: center;
+        padding: 0.5rem;
+        p {
+            margin: 0;
+        }
+    }
+
+    &-dev-logo {
+        text-align: right;
+        @media screen and (max-width: 991px) {
+            text-align: center;
+            margin-top: 1rem;
+        }
+    }
 }

@@ -659,8 +659,6 @@ body {
   padding-left: 0;
   min-height: 30rem;
 }
-<<<<<<< HEAD
-=======
 @media screen and (max-width: 1200px) {
   .problems ul {
     min-height: 36rem;
@@ -671,7 +669,6 @@ body {
     min-height: auto;
   }
 }
->>>>>>> e54eea7952e1af1337e1e156a50ce3ce88a456bb
 .problems ul li {
   margin-bottom: 3rem;
   position: relative;
@@ -780,7 +777,7 @@ body {
   }
 }
 .tour--button {
-  padding: 2.3rem 3rem;
+  padding: 2.3rem 2rem;
 }
 
 .upsell {
@@ -810,6 +807,46 @@ body {
 }
 .upsell-blocks {
   margin-top: 5rem;
+}
+
+.contacts {
+  font-size: 1.6rem;
+}
+.contacts h2 {
+  font-family: "ProximaNova_bold", sans-serif;
+}
+.contacts p {
+  margin: 2rem 0;
+}
+.contacts-link {
+  display: inline-block;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.footer {
+  font-size: 1.6rem;
+}
+@media screen and (max-width: 991px) {
+  .footer .logo {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+}
+.footer-info {
+  text-align: center;
+  padding: 0.5rem;
+}
+.footer-info p {
+  margin: 0;
+}
+.footer-dev-logo {
+  text-align: right;
+}
+@media screen and (max-width: 991px) {
+  .footer-dev-logo {
+    text-align: center;
+    margin-top: 1rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

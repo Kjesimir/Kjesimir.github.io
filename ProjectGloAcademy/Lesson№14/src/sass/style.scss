@@ -809,6 +809,7 @@ body {
 
     &--button {
         padding: 2.3rem 2rem;
+        font-size: 14px;
     }
 }
 
@@ -849,6 +850,13 @@ body {
 //Секция контакты
 .contacts {
     font-size: 1.6rem;
+    background: url(../img/back-contacts.png);
+
+    @media screen and (max-width: 991px) {
+        background: unset;
+        background-color: #f0ebea;
+    }
+
     h2 {
         @include bold();
     }
@@ -866,6 +874,7 @@ body {
 //Секция футер 
 .footer {
     font-size: 1.6rem;
+    padding: 3rem 0;
     .logo {
         @media screen and (max-width: 991px) {
             text-align: center;
@@ -876,13 +885,19 @@ body {
     &-info {
         text-align: center;
         padding: 0.5rem;
+
         p {
             margin: 0;
+        }
+
+        &__phone {
+            font-size: 2rem;
         }
     }
 
     &-dev-logo {
         text-align: right;
+        font-size: 1.1rem;
         @media screen and (max-width: 991px) {
             text-align: center;
             margin-top: 1rem;

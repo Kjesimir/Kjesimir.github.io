@@ -778,6 +778,7 @@ body {
 }
 .tour--button {
   padding: 2.3rem 2rem;
+  font-size: 14px;
 }
 
 .upsell {
@@ -811,6 +812,13 @@ body {
 
 .contacts {
   font-size: 1.6rem;
+  background: url(../img/back-contacts.png);
+}
+@media screen and (max-width: 991px) {
+  .contacts {
+    background: unset;
+    background-color: #f0ebea;
+  }
 }
 .contacts h2 {
   font-family: "ProximaNova_bold", sans-serif;
@@ -825,6 +833,7 @@ body {
 
 .footer {
   font-size: 1.6rem;
+  padding: 3rem 0;
 }
 @media screen and (max-width: 991px) {
   .footer .logo {
@@ -839,8 +848,12 @@ body {
 .footer-info p {
   margin: 0;
 }
+.footer-info__phone {
+  font-size: 2rem;
+}
 .footer-dev-logo {
   text-align: right;
+  font-size: 1.1rem;
 }
 @media screen and (max-width: 991px) {
   .footer-dev-logo {

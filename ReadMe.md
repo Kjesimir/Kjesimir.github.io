@@ -19,3 +19,5 @@
 [Урок 20](https://kjesimir.github.io/ProjectGloAcademy/Lesson№20) - Паралакс
 
 [Урок 21](https://kjesimir.github.io/ProjectGloAcademy/Lesson№21) - Карты 
+
+[Урок 25](https://kjesimir.github.io/ProjectGloAcademy/Lesson№25) - Отправка почты

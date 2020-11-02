@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Задание к 21 уроку</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+	<div class="container">
+		<form id="contact" action="mailer/smart.php" method="post">
+			<h3>Контактная форма</h3>
+			<h4>Свяжитесь с нами</h4>
+			<fieldset>
+				<input placeholder="Ваше имя" name="user_name" type="text" tabindex="1" required autofocus>
+			</fieldset>
+			<fieldset>
+				<input placeholder="Ваш Email" name="user_email" type="email" tabindex="2" required>
+			</fieldset>
+			<fieldset>
+				<input placeholder="Ваш телефон" name="user_phone" type="tel" tabindex="3" required>
+			</fieldset>
+			<fieldset>
+				<input placeholder="Ваш вебсайт" name="user_site" type="url" tabindex="4" required>
+			</fieldset>
+			<fieldset>
+				<textarea placeholder="Сообщение...." name="user_message" tabindex="5" required></textarea>
+			</fieldset>
+			<fieldset>
+				<button name="submit" type="submit" id="contact-submit" data-submit="...Отправка">Отправить</button>
+			</fieldset>
+		</form>
+	</div>
+</body>
+<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+	$('form').submit(function (event) {
+		event.preventDefault();
+		console.log($(this).serialize());
+
+		$.ajax({
+			url: 'mailer/smart.php',
+			type: "POST",
+			data: $(this).serialize()
+		}).done(function () {
+			alert("Сообщение успешно отправлено");
+			$("form").trigger("reset");
+		});
+		return false;
+	})
+</script>
+
+</html>

@@ -21,3 +21,5 @@
 [Урок 21](https://kjesimir.github.io/ProjectGloAcademy/Lesson№21) - Карты 
 
 [Урок 25](https://kjesimir.github.io/ProjectGloAcademy/Lesson№25) - Отправка почты
+
+[Урок 26](https://kjesimir.github.io/ProjectGloAcademy/Lesson№26) - Отправка почты

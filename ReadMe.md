@@ -23,3 +23,5 @@
 [Урок 25](https://kjesimir.github.io/ProjectGloAcademy/Lesson№25) - Отправка почты
 
 [Урок 26](https://kjesimir.github.io/ProjectGloAcademy/Lesson№26) - Многостраничный сайт php
+
+[Урок 27](https://kjesimir.github.io/ProjectGloAcademy/Lesson№27) - Wordpress

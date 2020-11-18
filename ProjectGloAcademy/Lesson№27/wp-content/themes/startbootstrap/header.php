@@ -23,15 +23,12 @@
     <title>Freelancer - Start Bootstrap Theme</title>
 
     <!-- Bootstrap core C SS -->
-    <link href="<?php echo get_template_directory_uri(); ?>/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom fonts for this template -->
-    <link href="<?php echo get_template_directory_uri(); ?>/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
     <!-- Custom styles for this template -->
     <link href="<?php echo get_template_directory_uri(); ?>/css/freelancer.min.css" rel="stylesheet">
+    <?php wp_head(); ?>
 
   </head>
 
@@ -80,14 +77,3 @@
         </ul> -->
       </div>
     </nav>
-    <!-- Header -->
-    <header class="masthead">
-      <div class="container">
-        <img class="img-fluid" src="<?php bloginfo('template_url'); ?>/img/profile.png" alt="">
-        <div class="intro-text">
-          <span class="name"><?php bloginfo('title'); ?></span>
-          <hr class="star-light">
-          <span class="skills"><?php bloginfo('description'); ?></span>
-        </div>
-      </div>
-    </header>

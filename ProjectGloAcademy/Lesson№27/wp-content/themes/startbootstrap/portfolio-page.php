@@ -12,66 +12,37 @@ get_header();
         <h2 class="text-center">Portfolio</h2>
         <hr class="star-primary">
         <div class="row">
-          <div class="col-sm-4 portfolio-item">
-            <div class="portfolio-link" href="#portfolioModal1" data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
+
+        <?php 
+        $args = array(
+          'numberposts' => 5,
+          'orderby'     => 'date',
+          'order'       => 'DESC',
+          'include'     => array(),
+          'exclude'     => array(),
+          'meta_key'    => '',
+          'meta_value'  =>'',
+          'post_type'   => 'post',
+        );
+
+        $posts = get_posts($args);
+        foreach( $posts as $post ){
+          setup_postdata($post);
+          ?>
+            <div class="col-sm-4 portfolio-item">
+              <a class="portfolio-link" href="<?php the_permalink();?>" >
+                <div class="caption">
+                  <div class="caption-content">
+                    <?php the_title();?>
+                  </div>
                 </div>
-              </div>
-              <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/portfolio/cabin.png" alt="">
+                <img class="img-fluid" src="<?php the_post_thumbnail_url(); ?>" alt="">
+              </a>
             </div>
-          </div>
-          <div class="col-sm-4 portfolio-item">
-            <div class="portfolio-link" href="#portfolioModal2" data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/portfolio/cake.png" alt="">
-            </div>
-          </div>
-          <div class="col-sm-4 portfolio-item">
-            <div class="portfolio-link" href="#portfolioModal3" data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/portfolio/circus.png" alt="">
-            </div>
-          </div>
-          <div class="col-sm-4 portfolio-item">
-            <div class="portfolio-link" href="#portfolioModal4" data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/portfolio/game.png" alt="">
-            </div>
-          </div>
-          <div class="col-sm-4 portfolio-item">
-            <div class="portfolio-link" href="#portfolioModal5" data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/portfolio/safe.png" alt="">
-            </div>
-          </div>
-          <div class="col-sm-4 portfolio-item">
-            <div class="portfolio-link" href="#portfolioModal6" data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/portfolio/submarine.png" alt="">
-            </div>
-          </div>
+          <?php
+        }
+        wp_reset_postdata();
+        ?>
         </div>
       </div>
     </section>

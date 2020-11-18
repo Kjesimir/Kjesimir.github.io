@@ -8,7 +8,7 @@
  *
  * @package StartBootstrap
  */
-
+$icons = get_field('icons',59);
 ?>
     <!-- Footer -->
     <footer class="text-center">
@@ -24,22 +24,22 @@
               <h3>Around the Web</h3>
               <ul class="list-inline">
                 <li class="list-inline-item">
-                  <a class="btn-social btn-outline" href="#">
+                  <a class="btn-social btn-outline" href="<?php echo $icons['facebook'] ?>">
                     <i class="fa fa-fw fa-facebook"></i>
                   </a>
                 </li>
                 <li class="list-inline-item">
-                  <a class="btn-social btn-outline" href="#">
+                  <a class="btn-social btn-outline" href="<?php echo $icons['google'] ?>">
                     <i class="fa fa-fw fa-google-plus"></i>
                   </a>
                 </li>
                 <li class="list-inline-item">
-                  <a class="btn-social btn-outline" href="#">
+                  <a class="btn-social btn-outline" href="<?php echo $icons['twitter'] ?>">
                     <i class="fa fa-fw fa-twitter"></i>
                   </a>
                 </li>
                 <li class="list-inline-item">
-                  <a class="btn-social btn-outline" href="#">
+                  <a class="btn-social btn-outline" href="<?php echo $icons['in'] ?>">
                     <i class="fa fa-fw fa-linkedin"></i>
                   </a>
                 </li>
@@ -75,21 +75,6 @@
         <i class="fa fa-chevron-up"></i>
       </a>
     </div>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="<?php echo get_template_directory_uri(); ?>/vendor/jquery/jquery.min.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/vendor/popper/popper.min.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="<?php echo get_template_directory_uri(); ?>/vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="<?php echo get_template_directory_uri(); ?>/js/jqBootstrapValidation.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/js/contact_me.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="<?php echo get_template_directory_uri(); ?>/js/freelancer.min.js"></script>
 
 <?php wp_footer(); ?>
 

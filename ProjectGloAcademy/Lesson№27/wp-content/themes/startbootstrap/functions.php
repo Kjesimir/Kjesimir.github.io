@@ -141,9 +141,18 @@ add_action( 'widgets_init', 'startbootstrap_widgets_init' );
  */
 function startbootstrap_scripts() {
 	wp_enqueue_style( 'startbootstrap-style', get_stylesheet_uri(), array(), _S_VERSION );
+	wp_enqueue_style( 'startbootstrap-main-font', get_template_directory_uri() . '/vendor/font-awesome/css/font-awesome.min.css');
+	wp_enqueue_style( 'startbootstrap-main', get_template_directory_uri() . '/vendor/bootstrap/css/bootstrap.min.css');
 	wp_style_add_data( 'startbootstrap-style', 'rtl', 'replace' );
 
-	wp_enqueue_script( 'startbootstrap-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+    wp_enqueue_script( 'startbootstrap-pooper', get_template_directory_uri() . '/vendor/popper/popper.min.js');
+	wp_enqueue_script( 'startbootstrap-bootstrap', get_template_directory_uri() . '/vendor/bootstrap/js/bootstrap.min.js', array('jquery'));
+
+    wp_enqueue_script( 'startbootstrap-jauery-easing', get_template_directory_uri() . '/vendor/jquery-easing/jquery.easing.min.js', array('jquery'));
+
+    wp_enqueue_script( 'startbootstrap-jqBootstrapValidation', get_template_directory_uri() . '/js/jqBootstrapValidation.js');
+    wp_enqueue_script( 'startbootstrap-freelancer', get_template_directory_uri() . '/js/freelancer.min.js');
+    wp_enqueue_script( 'startbootstrap-contact_me', get_template_directory_uri() . '/js/contact_me.js', array('jquery'));
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

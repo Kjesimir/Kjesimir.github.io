@@ -861,5 +861,9 @@ body {
     margin-top: 1rem;
   }
 }
+iframe {
+  width: 100%;
+  height: 250px;
+}
 
 /*# sourceMappingURL=style.css.map */

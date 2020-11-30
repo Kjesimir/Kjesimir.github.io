@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Автоматизированная штукатурка стен</title>
+    <link rel="stylesheet" href="src/css/animate.css">
 </head>
 
 <body>
@@ -28,23 +29,22 @@
             </div>
             <div class="main-content">
                 <div class="row">
-                    <div class="col-md-7 col-lg-6 col-sm-12">
-                        <h1 class="main-content__title">Автоматизированная <br>штукатурка стен</h1>
+                    <div class="col-md-7 col-lg-6 col-sm-12 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.4s">
+                        <h1 class="main-content__title">Автоматизированная <br>штукатурка Стен</h1>
                         <p class="main-content__subtitle">Идеально ровные стены <br>в кратчайшие сроки</p>
                         <span class="main-content__trigger">Стоимость работ<br>от <strong>300</strong> руб/м2</span>
                         <strong class="main-content__payment">Оплата по факту!</strong>
                     </div>
-                    <div
-                        class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 col-xs-10 col-xs-offset-1">
+                    <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 col-xs-10 col-xs-offset-1 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.4s">
                         <div class="main-content__form">
                             <div class="main-content__form-title">Для расчёта точной стоимости<br>закажите <strong>выезд
                                     замерщика</strong> </div>
-                            <form action="#" class="form">
+                            <form  id="form" class="form">
                                 <label for="form-name">Ваше имя</label>
-                                <input id="form-name" class="form-name" type="text">
+                                <input id="form-name" class="form-name" name="user-name" required type="text">
                                 <label for="form-phone">Номер телефона</label>
-                                <input id="form-phone" class="form-phone" type="text">
-                                <button class="button form-button">Оставьте заявку</button>
+                                <input id="form-phone" class="form-phone phone" name="user-phone" required type="text">
+                                <button  type="submit" class="button form-button">Оставьте заявку</button>
                                 <small>Приедем в день обращения*</small>
                             </form>
                         </div>
@@ -58,10 +58,10 @@
         <div class="container">
             <h2 class="section-header">Преимущество работы с нами</h2>
             <div class="features-slider">
-                <div class="features-block">
+                <div class="features-block wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s">
                     <div class="features-img">
                         <picture>
-                            <source srcset="img/coin.svg" type="image/svg+xml">
+                            <source srcset="src/img/coin.png" type="image">
                             <img src="src/img/coin.png" alt="Платите по факту ">
                         </picture>
                     </div>
@@ -69,10 +69,10 @@
                     <p>Вы оплачиваете выполненные работы только после их выполнения.<br>Никаких скрытых доплат и
                         промежуточных платежей. </p>
                 </div>
-                <div class="features-block">
+                <div class="features-block wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
                     <div class="features-img">
                         <picture>
-                            <source srcset="src/img/folder.svg" type="image/svg+xml">
+                            <source srcset="src/img/folder.svg" type="image">
                             <img src="src/img/folder.png" alt="Заключаем договор ">
                         </picture>
                     </div>
@@ -80,10 +80,10 @@
                     <p>Перед началом работ заключаем договор на юридическое лицо.<br> Вы можете быть уверены, что все
                         обязательства будут выполнены. </p>
                 </div>
-                <div class="features-block">
+                <div class="features-block wow fadeInDown" data-wow-duration="1s" data-wow-delay="1.5s">
                     <div class="features-img">
                         <picture>
-                            <source srcset="src/img/clock.svg" type="image/svg+xml">
+                            <source srcset="src/img/clock.svg" type="image">
                             <img src="src/img/clock.png" alt="Точно в срок">
                         </picture>
                     </div>
@@ -91,10 +91,10 @@
                     <p>Работаем строго по установленным срокам, которые прописаны в договоре.Если не успеваем, Вы
                         плдатите меньше</p>
                 </div>
-                <div class="features-block">
+                <div class="features-block wow fadeInUp" data-wow-duration="1s" data-wow-delay="2s">
                     <div class="features-img">
                         <picture>
-                            <source srcset="src/img/bank.svg" type="image/svg+xml">
+                            <source srcset="src/img/bank.svg" type="image">
                             <img src="src/img/bank.png" alt="Экономите на материалах">
                         </picture>
                     </div>
@@ -122,7 +122,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+                <div class="col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s">
                     <div class="price-block">
                         <h3>Штукатурка вашим материалом</h3>
                         <img src="src/img/1-price.jpg" alt="">
@@ -134,7 +134,7 @@
                         <button class="button">Заказать</button>
                     </div>
                 </div>
-                <div class="col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+                <div class="col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
                     <div class="price-block">
                         <h3>Штукатурка под шпаклёвку</h3>
                         <img src="src/img/2-price.jpg" alt="">
@@ -148,7 +148,7 @@
                         <button class="button">Заказать</button>
                     </div>
                 </div>
-                <div class="col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+                <div class="col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s">
                     <div class="price-block">
                         <h3>Штукатурка под обои</h3>
                         <img src="src/img/3-price.jpg" alt="">
@@ -170,7 +170,7 @@
     <div class="section feedback">
         <div class="container">
             <h2 class="feedback__title">Отзывы</h2>
-            <div class="feedback-slider">
+            <div class="feedback-slider wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
                 <div class="feedback-slider__item">
                     <div class="fotorama slider-fotorama col-md-6" data-arrows="false" data-loop="true"
                         data-nav="thumbs">
@@ -263,11 +263,11 @@
                     <div class="row">
                         <div class="col-md-6">
                             <label for="feedback-form-name">Ваше имя</label>
-                            <input id="feedback-form-name" class="form-name" type="text">
+                            <input id="feedback-form-name" name="user-name" class="form-name" required type="text">
                         </div>
                         <div class="col-md-6">
                             <label for="feedback-form-phone">Номер телефона</label>
-                            <input id="feedback-form-phone" class="form-phone" type="text">
+                            <input id="feedback-form-phone" name="user-phone" class="form-phone phone" required type="text">
                         </div>
                         <button class="button form-button feedback-form__btn">Оставьте заявку</button>
                     </div>
@@ -278,19 +278,19 @@
 
     <div class="section schema">
         <div class="container">
-            <div class="schema__header">
+            <div class="schema__header wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
                 <h2 class="schema__title">Схема работы</h2>
                 <p class="schema__subtitle">Работа над вашим объектом будет включать в себя следующие этапы:</p>
             </div>
             <div class="row">
-                <div class="col-md-3 col-md-offset-1 col-sm-4 col-sm-offset-1 col-xs-8 col-xs-offset-2">
+                <div class="col-md-3 col-md-offset-1 col-sm-4 col-sm-offset-1 col-xs-8 col-xs-offset-2 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
                     <div class="schema-wrap">
                         <img src="src/img/schema/1.png" alt="Заявка">
                         <h2>Заявка</h2>
                             <p>Оставляете онлайн заявку или звоните +7 495 771 05 08 </p>
                     </div>
                 </div>
-                <div class="col-md-3 col-md-offset-1 col-sm-4 col-sm-offset-1 col-xs-8 col-xs-offset-2">
+                <div class="col-md-3 col-md-offset-1 col-sm-4 col-sm-offset-1 col-xs-8 col-xs-offset-2 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
                     <div class="schema-wrap">
                         <img src="src/img/schema/2.png" alt="Выезд специалиста ">
                         <h3>Выезд специалиста</h3>
@@ -298,21 +298,21 @@
                             стоимости работ</p>
                     </div>
                 </div>
-                <div class="col-md-3 col-md-offset-1 col-sm-4 col-sm-offset-1 col-xs-8 col-xs-offset-2">
+                <div class="col-md-3 col-md-offset-1 col-sm-4 col-sm-offset-1 col-xs-8 col-xs-offset-2 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
                     <div class="schema-wrap">
                         <img src="src/img/schema/3.png" alt="Составление договора">
                         <h2>Составление договора </h2>
                             <p>Готовим договор и согласовываем с Вами </p>
                     </div>
                 </div>
-                <div class="col-md-3 col-md-offset-1 col-sm-4 col-sm-offset-1 col-xs-8 col-xs-offset-2">
+                <div class="col-md-3 col-md-offset-1 col-sm-4 col-sm-offset-1 col-xs-8 col-xs-offset-2 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
                     <div class="schema-wrap">
                         <img src="src/img/schema/4.png" alt="Начало работ ">
                         <h2>Начало работ</h2>
                             <p>Доставляем материалы, оборудование, подписываем договор и начинаем работы</p>
                     </div>
                 </div>
-                <div class="col-md-3 col-md-offset-1 col-sm-4 col-sm-offset-1 col-xs-8 col-xs-offset-2">
+                <div class="col-md-3 col-md-offset-1 col-sm-4 col-sm-offset-1 col-xs-8 col-xs-offset-2 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
                     <div class="schema-wrap">
                         <img src="src/img/schema/5.png" alt="Завершение работ ">
                         <h2>Завершение работ</h2>
@@ -326,11 +326,11 @@
 
     <div class="all-inclusive">
         <div class="container">
-            <div class="section-header section-header__all-inclusive section-header--active">
+            <div class="section-header section-header__all-inclusive section-header--active wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
                 <h2>Все на 100% включено!</h2>
                 <p>При выполнении работ с нашим материалом в стоимость входит: </p>
             </div>
-            <div class="row">
+            <div class="row wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
                 <div class="col-md-3">
                     <div class="all-inclusive__item">
                         <div class="all-inclusive__icon">
@@ -437,7 +437,7 @@
         <div class="container problems-container">
             <h2>Мы развеем все опасения</h2>
             <div class="row">
-                <div class="col-md-5">
+                <div class="col-md-5 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.4s">
                     <div class="problems-list problems-list--bad">
                         <h3>Какие могут быть проблемы</h3>
                         <ul>
@@ -448,7 +448,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-5 col-md-offset-2">
+                <div class="col-md-5 col-md-offset-2 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.4s">
                     <div class="problems-list problems-list--good">
                         <h3>Наше решение:</h3>
                         <ul>
@@ -472,7 +472,7 @@
             <h2>Материалы</h2>
             <p class="offers-subtitle">Мы работаем только качественными, проверенными временем материалами, следующих
                 производителей:</p>
-            <div class="features-slider">
+            <div class="features-slider wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
                 <div class="offers-block">
                     <div class="offers-block__inner">
                         <div class="offers-img">
@@ -514,7 +514,7 @@
                     <a href="https://www.youtube.com/watch?v=2mUEULJy2uY&ab_channel=Verus" class="offers-link">Сертификат</a>
                 </div>
             </div>
-            <div class="offers-text">
+            <div class="offers-text wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
                 Вы можете приобрести материалы по оптовым ценам на сайте <a href="http://gicema.ru">gicema.ru</a> или по
                 телефону <span class="offers-text__phone">+7 495 790 69 90</span>
             </div>
@@ -525,22 +525,21 @@
         <div class="container">
             <div class="main-content">
                 <div class="row">
-                    <div class="col-md-7 col-lg-6 col-sm-12">
+                    <div class="col-md-7 col-lg-6 col-sm-12 animate__animated wow fadeInLeft">
                         <h1 class="main-content__title">Посмотрите<br>как мы работаем </h1>
                         <p class="main-content__subtitle">Хотите удостовериться в профессионализме наших сотрудников?
                         </p>
                         <p class="main-content__subtitle"> Вы можете сделать это, приехав на один из наших объектов, и
                             понаблюдав за ходом работ. Увидите оборудование, материалы и качество исполнения.</p>
                     </div>
-                    <div
-                        class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 col-xs-10 col-xs-offset-1">
+                    <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 col-xs-10 col-xs-offset-1 wow fadeInRight"  data-wow-duration="1s" data-wow-delay="0.4s">
                         <div class="main-content__form">
                             <div class="main-content__form-title">Оставьте контактные данные<br>для связи </div>
-                            <form action="#" class="form">
+                            <form   class="form">
                                 <label for="tour-form-name">Ваше имя</label>
-                                <input id="tour-form-name" class="form-name" type="text">
+                                <input id="tour-form-name" name="user-name" class="form-name" required type="text">
                                 <label for="tour-form-phone">Номер телефона</label>
-                                <input id="tour-form-phone" class="form-phone" type="text">
+                                <input id="tour-form-phone" name="user-phone" class="form-phone phone" required type="text">
                                 <button class="button form-button tour--button">Записаться на просмотр</button>
                                 <small>Подберем ближайщий к вам объект</small>
                             </form>
@@ -555,27 +554,27 @@
         <div class="container">
             <h2 class="upsell__title">Дополнительные услуги </h2>
             <p class="upsell__subtitle">Помимо штукатурных рыбот Вы можете заказать у нас следующие услги.</p>
-            <div class="upsell-blocks">
+            <div class="upsell-blocks wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
                 <div class="row">
                     <div class="col-md-4">
                         <div class="upsell-block">
                             <img src="src/img/upsell-1.png" alt="">
                             <p>Монтаж электропроводки </p>
-                            <button class="button">Цены</button>
+                            <a href="https://www.youtube.com/watch?v=dXRv6ghXCpM&t=625s&ab_channel=GloAcademy" class="button" target="__blank">Цены</a>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="upsell-block">
                             <img src="src/img/upsell-2.png" alt="">
                             <p>Стяжка пола</p>
-                            <button class="button">Цены</button>
+                            <a href="https://www.youtube.com/watch?v=dXRv6ghXCpM&t=625s&ab_channel=GloAcademy" class="button" target="__blank">Цены</a>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="upsell-block">
                             <img src="src/img/upsell-3.png" alt="">
                             <p>Сантехнические работы</p>
-                            <button class="button">Цены</button>
+                            <a href="https://www.youtube.com/watch?v=dXRv6ghXCpM&t=625s&ab_channel=GloAcademy" class="button" target="__blank">Цены</a>
                         </div>
                     </div>
                 </div>
@@ -586,7 +585,7 @@
     <div class="section contacts">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.4s">
                     <h2>Контакты</h2>
                     <p>Адрес офиса:<br>Москва, копейское шоссе, 12, офис 34</p>
                     <div class="contacts-map">
@@ -596,16 +595,16 @@
                     <p class="contacts-link">E-mail<br><a href="order@gipsolit.ru">order@gipsolit.ru</a></p>
                     <p>Реквизиты:<br>ИНН 35453453 ОГРН 34234234</p>
                 </div>
-                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-8 col-sm-offset-2">
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-8 col-sm-offset-2 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.4s">
                     <div class="main-content__form">
                         <div class="main-content__form-title">Оставьте контактные данные<br>для связи </div>
-                        <form action="#" class="form">
+                        <form   class="form">
                             <label for="contacts-form-name">Ваше имя</label>
-                            <input id="contacts-form-name" class="form-name" type="text">
+                            <input id="contacts-form-name" name="user-name" class="form-name" type="text">
                             <label for="contacts-form-phone">Номер телефона</label>
-                            <input id="contacts-form-phone" class="form-phone" type="text">
+                            <input id="contacts-form-phone" name="user-phone" class="form-phone phone" required type="text">
                             <label for="contacts-form-email">E-mail</label>
-                            <textarea id="contacts-form-email"  class="form-email" cols="30" rows="4"></textarea>
+                            <textarea id="contacts-form-email" name="user-message" class="form-email" required cols="30" rows="4"></textarea>
                             <button class="button form-button tour--button">Записаться на просмотр</button>
                         </form>
                     </div>
@@ -642,40 +641,70 @@
     </footer>
 
     <!-- Модальное окно -->
-    <div class="popup">
+    <div class="popup" id="popup__consultation">
         <div class="popup-dialog">
             <div class="popup-content">
                 <div class="popup__close">&times;</div>
                 <div class="popup__title">Заинтересовало?</div>
                 <div class="popup__subtitle"> Оставьте контактные данные <br>для связи </div>
-                <form action="/callback" class="form popup__form">
+                <form class="form popup__form">
                     <label for="popup-name">Ваше имя</label>
-                    <input id="popup-name" class="form-name" type="text">
+                    <input id="popup-name" name="user-name" class="form-name" required type="text">
                     <label for="popup-phone">Номер телефона</label>
-                    <input id="popup-phone" class="form-phone" type="text">
+                    <input id="popup-phone" name="user-phone" class="form-phone phone" required type="text">
                     <label for="popup-message">Сообщение</label>
-                    <textarea id="popup-message" class="form-message" rows="3"></textarea>
+                    <textarea id="popup-message" name="user-message" class="form-message" required rows="3"></textarea>
                     <button class="button form-button">Оставьте заявку</button>
                 </form>
             </div>
         </div>
     </div>
+
+    <div class="popup" id="popup__cost">
+        <div class="popup-dialog">
+            <div class="popup-content">
+                <div class="popup__close">&times;</div>
+                <div class="popup__title">Заинтересовало?</div>
+                <div class="popup__subtitle"> Оставьте контактные данные <br>для связи </div>
+                <form class="form popup__form">
+                    <label for="popup-name">Ваше имя</label>
+                    <input id="popup-name" name="user-name" class="form-name" required type="text">
+                    <label for="popup-phone">Номер телефона</label>
+                    <input id="popup-phone" name="user-phone" class="form-phone phone" required type="text">
+                    <label for="popup-message">Сообщение</label>
+                    <textarea id="popup-message" name="user-message" class="form-message" required rows="3"></textarea>
+                    <button class="button form-button">Оставьте заявку</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <link rel="stylesheet" href="src/css/style.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="src/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="src/slick/slick-theme.css" />
-    <link rel="stylesheet" href="src/css/style.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="src/slick/slick.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+    <script src="src/js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="src/js/jquery.mask.js"></script>
     <script>
         // Открытие и закрытие модального окна
 
         $('.popup-button').on('click', function (event) {
             event.preventDefault();
-            $('.popup').fadeIn();
+            $('#popup__consultation').fadeIn();
+        })
+
+        $('.price-button').on('click', function (event) {
+            event.preventDefault();
+            $('#popup__cost').fadeIn();
         })
 
         $('.popup__close').on('click', function (event) {
@@ -691,12 +720,11 @@
         });
 
         $('.popup').click(function (e) {
-            console.log($(e.target));
-            console.log($(e.target).closest('.popup-content'));
             if ($(e.target).closest('.popup-content').length == 0) {
                 $(this).fadeOut();
             }
         });
+
         //Slider настройка 
         $('.features-slider').slick({
             infinite: true,
@@ -722,6 +750,7 @@
                 }
             ]
         });
+
         //Slider feedback настройка 
         $('.feedback-slider').slick({
             infinite: true,
@@ -729,7 +758,27 @@
             nextArrow: '<button type="button" class="feedback-slider__button feedback-slider__next"></button>',
             prevArrow: '<button type="button" class="feedback-slider__button feedback-slider__prev"></button>'
         });
+
+        //Validation input
+        $(document).ready(function(){
+            $('.date').mask('00/00/0000');
+            $('.phone').mask('+7 (000) 000 00 00');
+        });
     </script>
+<script>
+	$('form').submit(function (event) {
+		event.preventDefault();
+		$.ajax({
+			url: 'mail/mailer.php',
+			type: "POST",
+			data: $(this).serialize()
+		}).success(function (data) {
+			alert(data);
+			$("form").trigger("reset");
+		});
+		return false;
+	})
+</script>
 </body>
 
 </html>
